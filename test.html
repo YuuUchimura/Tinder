@@ -1,0 +1,5 @@
+let xMulti = event.deltaX * 0.03;
+let yMulti = event.deltaY / 80;
+let rotate = xMulti * yMulti;
+
+event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
